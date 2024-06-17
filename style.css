@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background: #ff4545;
+    padding: 10px 20px;
+    align-items: center;
+    top: 0;
+    z-index: 10000;
+}
+.menu .logo{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Playwrite SK', sans-serif; /* Applying the imported font */
+
+}
+.side-nav{
+    background-color: rgb(8, 8, 8);
+    width: 300px;
+    border-radius: 2px;
+    margin-top: 0px;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+  left: 0;
+  display: none;
+  transition: all .10s ease-in-out;
+
+}
+.side-nav .closeNav{
+    text-decoration: none;
+    color: #fff;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    position: absolute;
+}
+.side-nav .links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    position: absolute;
+    top: 40px;
+}
+.side-nav .links a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 18px;
+    padding: 10px 0;
+    transition: .5s ease-in-out;
+}
+.side-nav .links a:hover{
+    color: #ebe1e1;
+    background-color: #212121;
+    margin-left: 0;
+    padding-left: 18px;
+}
+
+@media screen and (max-width:500px) {
+    .side-nav{
+        width: 100%;
+    }
+}
